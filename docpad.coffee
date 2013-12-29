@@ -13,7 +13,7 @@ docpadConfig = {
       url: "http://www.jptacek.com"
 
     # The default title of our website
-      title: "JPtacek.com | Blog by John Ptacek. Musings on code and who knows what 3ls3"
+      title: "JPtacek.com | Musings on code and who knows what 3ls3"
 
     # The website author's name
       author: "John Ptacek"
