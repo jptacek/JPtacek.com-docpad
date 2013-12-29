@@ -1,8 +1,7 @@
-This is the source for the [YTechie.com developer blog](http://www.ytechie.com/). It's set up so that I can easily add/edit content, check it into GitHub, and have Azure automatically pull the source and deploy it.
+This is the source for [JPtacek.com](http://www.jptacek.com/) blog.
 
-This is based off the website of [Erv Walter](http://www.ewal.net/).
+This is based off the website of [Erv Walter](http://www.ewal.net/) and [Jason Young] (http://www.ytechie.com)
 
-For more information about [why I'm using DocPad as my blogging platform, read this blog post](http://www.ytechie.com/2013/11/blogging-awesomeness-with-a-static-generator-and-markdown/).
 
 ###Installation
 
@@ -22,6 +21,8 @@ For more information about [why I'm using DocPad as my blogging platform, read t
 
 
 #### License
+
+Portions Copyright (c) 2013 [John Ptacek](http://www.jptacek.com/)
 
 Portions Copyright (c) 2013 [Jason Young](http://www.ytechie.com/)
 
