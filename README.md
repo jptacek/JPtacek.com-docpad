@@ -8,7 +8,7 @@ This is based off the website of [Erv Walter](http://www.ewal.net/) and [Jason Y
 1. Download the source
 2. Run *npm install* in the folder
 3. Customize src\partials\me.html
-4. Replace your photo in src\files\images\Headshot-Square.jpg (100x100px)
+4. Replace your photo in src\files\images\Headshot-Square.png (100x100px)
 5. Customize the default page template
  * Change the Google Analytics code to your own
  * Change the Google Plus information to your own
