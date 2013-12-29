@@ -16,4 +16,6 @@ cacheable: false
         Posted In: <%- ("<a href='#{@getTagUrl(tag)}'>#{tag}</a>" for tag in @tags).join(', ') %>
     </div>
     <% end %>
+    <br/>
+    By <a href="https://plus.google.com/+JohnPtacek?rel=auhthor">John Ptacek</a>
 </article>
