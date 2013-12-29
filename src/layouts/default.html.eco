@@ -24,6 +24,15 @@
 
     <%- @getBlock('meta').toHTML() %>
     <%- @getBlock('styles').toHTML() %>
+
+    <!-- MS Live tile tag -->
+    <meta name="application-name" content="JPtacek.Com"/>
+     <meta name="msapplication-TileColor" content="#527578"/>
+     <meta name="msapplication-square70x70logo" content="tiny.png"/>
+     <meta name="msapplication-square150x150logo" content="square.png"/>
+     <meta name="msapplication-wide310x150logo" content="wide.png"/>
+     <meta name="msapplication-square310x310logo" content="large.png"/>
+
 </head>
 <body>
 <% if @googlePlusId: %>
