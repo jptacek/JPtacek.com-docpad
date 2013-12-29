@@ -69,7 +69,7 @@ h5 {
       }
     }
 
-    .rss, .github, .twitter {
+    .rss, .github, .twitter, .linkedin, .googleplus {
       font-size: 18px;
       display: inline-block;
       padding-left: 6px;
@@ -102,6 +102,26 @@ h5 {
       }
       &:hover {
         color: #000;
+      }
+    }
+
+    .googleplus {
+      padding-right: 15px;
+      @media (min-width: 768px) {
+        padding-right: @horizontal-padding;
+      }
+      &:hover {
+        color: red;
+      }
+    }
+
+    .linkedin {
+      padding-right: 15px;
+      @media (min-width: 768px) {
+        padding-right: @horizontal-padding;
+      }
+      &:hover {
+        color: blue;
       }
     }
   }
