@@ -13,13 +13,13 @@ AngularJS is a Model View Controller (MVC) framework. The model represents our d
 
 First, we essentially wire up our page to indicate we are going to have an Angular app by putting a <span style="font-family:Courier New">data-ng-app</span> attribute in the HTML body tag. Next, we set an area of our HTML markup that our controller is responsible for with a <span style="font-family:Courier New">data-ng-controller</span> attribute in a DIV tag.
 
-<pre class="brush: xml;">
+``` xml
 <body data-ng-app="christmasApp">
 <b>12 Days of Christmas Calculator</b>
 <div class="container" id="12Days" data-ng-controller="christmasController">
 ...
 </div>
-</pre>
+```
 
 It is worth nothing that use of data-* attributes is more "semantically" correct. If you want to save yourself keystrokes, you can just use <span style="font-family:Courier New">ng-app</span> or <span style="font-family:Courier New">ng-controller</span>, but if you get bothered by having warnings in your code, like me, you will want to use <span style="font-family:Courier New">data-ng-app</span>, etc.
 
@@ -30,48 +30,46 @@ Our app.js file, which we call 12DaysApp.js, is just two lines and creates the s
 _12DaysApp.js
 _
 
-<pre class="brush: js">
+``` javascript
 'use strict';
 var christmasApp = angular.module('christmasApp', []);
-</pre>
+```
 
 Our next Javascript file is the controller and this is where the interesting stuff is. Essentially, AngularJS has the concept of a <span style="font-family:Courier New">$scope</span>. This is essentially a glorified property bad or state manage for interacting with the page. Within our controller, we create variables on the scope for each of our items. We are grabbing costs from a USA Today story from last year ([http://www.usatoday.com/story/money/business/2012/11/26/12-days-of-christmas-107k/1726807/](http://www.usatoday.com/story/money/business/2012/11/26/12-days-of-christmas-107k/1726807/)).
 
 To setup our controller, we create a controller with a callback such as 
 
 _christmasController.js
-_
 
-<pre class="brush: js">christmasApp.controller('christmasController',
+``` javascript
+christmasApp.controller('christmasController',
     function christmasController($scope) {
 
 );
-</pre><p>Notice passing in the $scope variable on the parameter list. AngularJS does a VERY nice job with Dependency Injection. By passing in the $scope variable we are enabling its use within our controller and the HTML view. As you explore Angular, you will come to appreciate how quickly you can add services or logging, etc. with their Dependency Injection framework.
+```
+<p>Notice passing in the $scope variable on the parameter list. AngularJS does a VERY nice job with Dependency Injection. By passing in the $scope variable we are enabling its use within our controller and the HTML view. As you explore Angular, you will come to appreciate how quickly you can add services or logging, etc. with their Dependency Injection framework.
 
 We can then create a variable on the scope to set the cost for items we are getting for the 12 days of Christmas. For example, to set the price of a pear tree to $189.99 and a partridge, we have the following lines in our controller
 
-<pre class="brush: js">
+``` javascript
 $scope.pearTree = 189.99;
 $scope.partridge = 15.00;
-</pre>
+```
 
 We then create a JavaScript function to calculate the cost of the first day.
 
-<pre class="brush: js">
+``` javascript
   $scope.day1 =  function () {
   return parseFloat($scope.pearTree) +  parseFloat($scope.partridge);
-</pre><p>
-
-<span style="font-family:Courier New">        };
-</span>
+ };
+```
 
 Now, the magic of two way data binding can start, by including the AngularJS library, our application JavaScript file and our Controller JavaScript file, get two way databinding. In our HTML markup, curly braces ( <span style="font-family:Courier New">{{ }}</span> ) indicate our AngularJS model. 
 
 So for the following markup, the <span style="font-family:Courier New">data-ng-model="partridge"</span> on our Input element says that we are two way binding the <span style="font-family:Courier New">$scope.partidge</span> value in our UI. And since this binding is part of a HTML Input box, whenever we make changes, it will update our UI. For example, we are displaying the Day 1 whatever value we initially set will be displayed. We then automatically update the value of function day1 via the function. This function is automatically updated and our UI as well whenever we type in a new value. This is pretty magical for developers who used to capture JavaScript key up and down events!
 
 **christmasController.js Code**
-
-<pre class="brush: js">
+``` javascript
 'use strict';
 
 christmasApp.controller('christmasController',
@@ -170,11 +168,10 @@ christmasApp.controller('christmasController',
 
     }
 );
-</pre>
+```
 
 **HTML Code**
-
-<pre class="brush: xml;">
+```xml
 <!DOCTYPE html>
 <html>
 <head>
@@ -244,6 +241,5 @@ christmasApp.controller('christmasController',
 </div>
 </body>
 </html>
-
-</pre>
+```
 This blog post originally appeared at [Skyline Technologies](http://skylinetechnologies.com/Blog/Article/2403/Day-Two-How-Much-Do-The-Twelve-Days-of-Christmas-Cost.aspx)

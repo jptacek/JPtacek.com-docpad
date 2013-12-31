@@ -24,7 +24,8 @@
     "docpad-plugin-dateurls": "https://github.com/ervwalter/docpad-plugin-dateurls/tarball/compiled",
     "docpad-plugin-cleanurls": "https://github.com/ervwalter/docpad-plugin-cleanurls/tarball/compiled",
     "docpad-plugin-paged": "https://github.com/ervwalter/docpad-plugin-paged/tarball/compiled",
-    "docpad-plugin-tagging": "https://github.com/ervwalter/docpad-plugin-tagging/tarball/compiled"
+    "docpad-plugin-tagging": "https://github.com/ervwalter/docpad-plugin-tagging/tarball/compiled",
+    "docpad-plugin-highlightjs": "~2.1.9"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.5.3"
