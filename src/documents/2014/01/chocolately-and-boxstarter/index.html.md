@@ -36,7 +36,8 @@ applications that require reboots, etc, when you are setting up a new PC. BoxSta
 automatically for the user. You can type one command and be on your way!
 
 [Boxstarter](http://boxstarter.org/) also enables me to setup a URL that will have all of the applications that I want
-installed in a single location. For example, I created a Gist file on GitHub with all of the applications I want installed.
+installed in a single location. For example, I created a Gist file on GitHub that has application I want when 
+I have a fresh PC.
 
 ```bash
     START http://boxstarter.org/package/nr/url?https://gist.github.com/jptacek/8099099/raw/f691b3433c09dcd361fca8cc6cfe637ca7521771/boxstarter
