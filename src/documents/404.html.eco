@@ -9,7 +9,10 @@ sitemap: false
         <h1>Oops! Page not found...</h1>
         <p>Sorry about that!</p>
         <p>
-            Unfortunately the page you were looking for could not be found. It might have
+           To be, or not to be--that is the question. Especially for this page.
+            </p>
+            <p>
+            It might have
             been removed, lost or never existed. You could try and find it using the
             <a href="http://google.com/search?q=site%3A<%= @site.url %>">search</a>
             box (top right corner), browse the
