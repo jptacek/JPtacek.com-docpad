@@ -2,7 +2,7 @@
 layout: post
 title: Calculating the Cost of the 12 Days of Christmas
 date: 2013-12-12
-scripts: ['scripts/12DaysApp.js','christmasController.js']
+scripts: 'scripts/12DaysApp.js' 'scripts/christmasController.js'
 tags: ["AngularJS","JavaScript","Skyline Technologies","Web"]
 ---
 
