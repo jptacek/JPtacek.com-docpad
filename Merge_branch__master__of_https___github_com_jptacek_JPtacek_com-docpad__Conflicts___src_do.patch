@@ -1,0 +1,17 @@
+Index: src/documents/2013/12/calculating-the-cost-of-the-12-days-of-christmas/index.html.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/documents/2013/12/calculating-the-cost-of-the-12-days-of-christmas/index.html.md	(date 1388603895000)
++++ src/documents/2013/12/calculating-the-cost-of-the-12-days-of-christmas/index.html.md	(revision )
+@@ -2,7 +2,7 @@
+ layout: post
+ title: Calculating the Cost of the 12 Days of Christmas
+ date: 2013-12-12
+-scripts: "scripts/12DaysApp.js" "scripts/christmasController.js"
++scripts: 'scripts/12DaysApp.js' 'scripts/christmasController.js'
+ tags: ["AngularJS","JavaScript","Skyline Technologies","Web"]
+ ---
+ 
+\ No newline at end of file
